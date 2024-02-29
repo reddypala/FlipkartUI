@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+
+        .box1 {
+            grid-area: 1/1/4/2;
+            background-color: cyan;
+            
+        }
+
+        .box2 {
+            grid-area: 1/3/3/4;
+            background-color: blanchedalmond;
+        }
+
+        .box3 {
+            grid-area: 1/2/2/3;
+            background-color: blueviolet;
+        }
+
+        .box4 {
+            grid-area: 3/2/4/4;
+            background-color: chartreuse;
+        }
+
+        .gc {
+            display: flex;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box1">ONE</div>
+        <div class="box2">TWO</div>
+        <div class="box3">THREE</div>
+        <div class="box4">FOUR</div>
+    </div>
+</body>
+
+</html>

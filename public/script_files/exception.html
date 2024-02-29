@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyLoad() {
+            try {
+                var a = prompt("Enter a");
+                var b = prompt("Enter b");
+                if(b==0){
+                    throw "Cannot divide a number by zero";
+                }
+                var c = a / b;
+                document.write(`Division=${c} <br>`);
+            }catch(ex){
+                document.write(`Exception occured:${ex}`);
+            }finally{
+                document.write("Program End");
+            }
+           
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+
+
+</body>
+
+</html>

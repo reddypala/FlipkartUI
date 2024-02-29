@@ -1,0 +1,18 @@
+<script>
+    var product = {
+        "Name":"Samsung Tv",
+        "Mfd": new Date("2023-4-20 18:30:21:77")
+    }
+    // document.write(`Name=${product.Name} <br> Mfd=${product.Mfd}`)
+    product.Mfd.setMonth(2);
+    product.Mfd.setDate(24);
+    var weekdays = ["sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var months = ['Jan','Feb','Mar','Apr','May','Jun','July','Aug','Sep','Oct','Nov','Dec'];
+
+    document.write(`
+        Manufactured Year:${product.Mfd.getFullYear()} <br>
+        Manufactured month:${months[product.Mfd.getMonth()]} <br>
+        Manufactured weekDay:${weekdays[product.Mfd.getDay()]} <br>
+        Manufactured Date:${product.Mfd.getDate()} <br>
+    `)
+</script>

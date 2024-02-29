@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function () {
+            $("img").attr("src", "../public/images/32inchtv.jpg");
+
+            $("button").click(function () {
+                $("h2").html(`Hello! ${$("#username").val()}`);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <img>
+    <div>
+        user Name: <input type="text" id="username"> <button>Submit</button>
+
+        <h2></h2>
+    </div>
+
+</body>
+
+</html>

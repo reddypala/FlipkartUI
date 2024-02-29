@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onsubmit</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function postData() {
+            var data = {
+                username: document.getElementById("username").value,
+                password: document.getElementById("pwd").value,
+                Email: document.getElementById("txtEmail").value,
+                city:document.getElementById("lstcities").value
+            };
+            console.log(JSON.stringify(data));
+            document.write("Form data submitted");
+        }
+        function resetForm(){
+            alert("Form will reset");
+        }
+        function cityChanged(){
+            document.getElementById("formRegister").submit();
+            postData();
+        }
+    </script>
+</head>
+
+<body class="container-fluid">
+    <div class="mt-4">
+        <form onsubmit="postData()" onreset="resetForm()" id="formRegister">
+            <dl>
+                <dt>UserName</dt>
+                <dd><input type="text" id="username"></dd>
+                <dt>Password</dt>
+                <dd><input type="password" id="pwd"></dd>
+                <dt>Email</dt>
+                <dd><input type="email" id="txtEmail"></dd>
+                <dt>select city</dt>
+                <dd>
+                    <select id="lstcities" onchange="cityChanged()" class="form-select">
+                        <option>Delhi</option>
+                        <option>Hyd</option>
+                        <option>Mumbai</option>
+                    </select>
+                </dd>
+            </dl>
+            <button>Register</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>

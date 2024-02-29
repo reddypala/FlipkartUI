@@ -1,0 +1,40 @@
+<script>
+    var msg = "Welcome to JavaScript";
+    document.write(`slice:${msg.slice(7, 14)}<br>`)
+    document.write(`slice:${msg.slice(7)}<br>`)
+    document.write(`slice:${msg.slice(7, 0)}<br>`)
+    document.write(`substr:${msg.substr(7, 14)} <br>`)
+    document.write(`substr:${msg.substr(7)} <br>`)
+    document.write(`substr:${msg.substr(7, 0)} <br>`)
+    document.write(`substring:${msg.substring(7, 14)} <br>`)
+    document.write(`substring:${msg.substring(7)} <br>`)
+    document.write(`substring:${msg.substring(7, 0)} <br>`)
+
+
+    //Task is seperate email-id and domain
+    var email = prompt("Enter email");
+    var id = email.substring(email.indexOf("@"), 0);
+    var domain = email.slice(email.indexOf("@") + 1);
+    document.write(`your id: ${id} <br> domain: ${domain} <br>`);
+
+    //New Destructuring technique
+    var contacts = "john-9876543210, david-9135797539"
+    var [john, david] = contacts.split(',');
+    document.write(john + "<br>");
+    document.write(david + "<br>");
+
+    //old technique
+    var condet = contacts.split(',');
+    document.write(condet[0] + "<br>" + condet[1] + "<br>");
+
+    var eid = "abcd123@gmail.com";
+    var res = eid.split("@");
+    var [a, b] = res;
+    document.write(a + "<br>");
+    document.write(b + "<br>");
+
+    var str = " welcome ";
+    var result = str.trim();
+    console.log(result);
+
+</script>

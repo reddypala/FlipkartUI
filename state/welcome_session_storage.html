@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyload() {
+            if (sessionStorage.getItem("uname") === null) {
+                location.href = "home.html";
+            } else {
+                document.querySelector("p").innerHTML = `Hello! ${sessionStorage.getItem('uname')}`;
+            }
+
+        }
+        function signoutClick(){
+            sessionStorage.removeItem("uname");
+            location.href = "home_session_storage.html";
+        }
+    </script>
+</head>
+
+<body onload="bodyload()">
+    <h2>Welcome Page</h2>
+    <p></p>
+    <button onclick="signoutClick()">SignOut</button>
+</body>
+
+</html>

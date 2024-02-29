@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid | Demo1</title>
+    <style>
+        .wrapper{
+            display: grid;
+            border: 1px solid black;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows: repeat(3,100px);
+            column-gap:20px ;
+            row-gap: 1em;
+
+            
+        }
+        .box1{
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            text-align: center;
+            color: brown;
+            font-weight: bold;
+        }
+        .box2{
+            border: 1px solid sandybrown;
+            border-radius: 5px;
+            background-color:yellow;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            text-align: center;
+            color: brown;
+            font-weight: bold;
+
+        }
+        .box3{
+            background-color: aqua;
+            border-radius: 5px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            text-align: center;
+            color: brown;
+            font-weight: bold;
+        }
+        .box4{
+            background-color: orange;
+            border-radius: 5px;
+            grid-column-start:2;
+            grid-column-end:4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            text-align: center;
+            color: brown;
+            font-weight: bold;
+        }
+        .grid-layout{
+            display: grid;
+            border: 3px solid orchid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,100px);
+        }
+        .b1{
+            background-color: aquamarine;
+            border-radius: 5px;
+            grid-column: 1/2;
+            grid-row: 1/4;
+        }
+        .b2{
+            background-color: khaki;
+            border-radius: 5px;
+            grid-column: 3/4;
+            grid-row:1/3 ;
+        }
+        .b3{
+            background-color: rebeccapurple;
+            border-radius: 5px;
+            grid-column:2/3 ;
+            grid-row: 1/2;
+        }
+        .b4{
+            background-color: mistyrose;
+            border-radius: 5px;
+            grid-column: 2/4;
+            grid-row:3/4 ;
+        }
+        .grid-area-layout{
+            display: grid;
+            border: 3px solid orchid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,100px);
+        }
+        .a1{
+            background-color: aquamarine;
+            border-radius: 5px; 
+            grid-area: 1/1/4/2;
+        }
+        .a2{
+            background-color: khaki;
+            border-radius: 5px; 
+            grid-area: 1/3/3/4;
+        }
+        .a3{
+            background-color: rebeccapurple;
+            border-radius: 5px; 
+            grid-area: 1/2/2/3;
+        }
+        .a4{
+            background-color: mistyrose;
+            border-radius: 5px; 
+            grid-area: 3/2/4/4;
+        }
+        .g1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            border: 3px solid black;
+            grid-auto-rows: 100px;
+            gap: 20px;
+            
+        }
+        .g1 div{
+            border: 1px solid blue;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">Three</div>
+        <div class="box4">Four</div>
+    
+    </div>
+
+    <div class="grid-layout">
+        <div class="b1">One</div>
+        <div class="b2">Two</div>
+        <div class="b3">Three</div>
+        <div class="b4">Four</div>
+    </div>
+    <div class="grid-area-layout">
+        <div class="a1">One</div>
+        <div class="a2">Two</div>
+        <div class="a3">Three</div>
+        <div class="a4">Four</div>
+    </div>
+    <div class="g1">
+        <div class="gd1">One</div>
+        <div class="gd2">Two</div>
+        <div class="gd3">Three</div>
+        <div class="gd4">Four</div>
+        <div class="gd5">Five</div>
+        <div class="gd6">six</div>
+        <div class="gd7">seven</div>
+        <div class="gd8">eight</div>
+        <div class="gd9">Nine</div>
+    </div>
+
+
+</body>
+</html>

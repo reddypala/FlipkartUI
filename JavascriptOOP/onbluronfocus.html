@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function ShowMessage(){
+            document.getElementById("msg").style.display="block";
+
+        }
+        function HideMessage(){
+            document.getElementById("msg").style.display="none";
+            var txtname = document.getElementById("txtname").value;
+            document.getElementById("txtname").value = txtname.toUpperCase();
+            document.getElementById("txtemail").focus();
+
+        }
+    </script>
+</head>
+<body class="container-fluid">
+    <div class="mt-4">
+        <fieldset>
+            <legend>UserName</legend>
+            <input type="text" onfocus="ShowMessage()" onblur="HideMessage()" class="form-control" id="txtname">
+            <div id="msg" style="display: none;">
+                Name in Block Letters only.
+            </div>
+            <legend>Password</legend>
+            <input type="password" id="txtpwd" class="form-control">
+            <legend>Email</legend>
+            <input type="email" id="txtemail" class="form-control">
+        </fieldset>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $("select").change(function(){
+                $("p").html(`City selected: ${$("select").val()}`);
+            })
+            $("#username").keyup(function(){
+                $("#uname").html(`username:${$("#username").val()}`);
+            })
+
+            $("#btn").click(function(event){
+                $("#iqp").html(`
+                    id: ${event.target.id} <br>
+                    Name: ${event.target.name} <br>
+                    value: ${event.target.value} <br>
+                    positionX: ${event.clientX} <br>
+                    positionY: ${event.clientY}
+                `)
+            })
+        })
+    </script>
+</head>
+<body>
+    Your City:
+    <select>
+        <option>Delhi</option>
+        <option>Hyderabad</option>
+        <option>Visakhapatnam</option>
+    </select>
+    <p></p>
+
+    Your Name: <input type="text" id="username">
+    <p id="uname"></p>
+
+    <button id="btn" name="insert" value="btn-insert">Insert</button>
+    <p id="iqp"></p>
+</body>
+</html>

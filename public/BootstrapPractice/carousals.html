@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <div class="carousel slide" data-bs-ride="carousel" id="banner">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="../images/amazon_back_ground.jpg" class="w-100 d-block mt-2">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="../images/slide2.jpg" class="w-100 d-block mt-2">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="../images/slide3.jpg" class="w-100 d-block mt-2">
+            </div>
+            <button data-bs-target="#banner" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <button data-bs-target="#banner" data-bs-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon" ></span>
+            </button>
+            <ul class="carousel-indicators">
+                <button data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#banner" data-bs-slide-to="1" class=""></button>
+                <button data-bs-target="#banner" data-bs-slide-to="2" class=""></button>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script  src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script  src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModelPractice</title>
+    <style>
+        /* .box1 {
+            border: 2px solid darkblue;
+            width: 600px;
+            height: 600px;
+            margin: 30px;
+        } */
+        .box2 {
+            border: 2px solid darkmagenta;
+            width: 600px;
+            height: 600px;
+            margin: 30px;
+        }
+
+        p {
+            font-size: 30px;
+            border: 1px solid burlywood;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* ul {
+            font-size: 30px;
+            border: 1px solid tomato;
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+        }
+        ul>li{
+            width: 100px;
+            border: 1px solid blueviolet;
+            padding: 5px;
+        }
+        .block{
+            display: block;
+            border: 2px solid magenta;
+        } */
+        .inlineType{
+            display: inline-flex;
+            list-style: none;
+            border: 1px solid burlywood;
+            margin: 10px;
+            padding: 10px;
+        }
+        .inlineType>li{
+            border: 1px solid saddlebrown;
+        }
+        .inline{
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">
+        <p>I am a paragraph.A short one</p>
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+            <li>Item5</li>
+        </ul>
+        <p>I am another paragraph.Some of the 
+            <span class="block">Words</span> have been wrapped in a 
+            <span>span element.</span>
+        </p>
+    </div>
+
+    <div class="box2">
+        <p>I am a paragraph.Some of the <span>words</span> have been wrapped in a span element</p>
+        <ul class="inlineType">
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item3</li>
+        </ul>
+        <p class="inline">I am a paragraph.A shorter one</p>
+        <p class="inline">I am another paragraph. Also a short One.</p>
+    </div>
+
+
+</body>
+
+</html>

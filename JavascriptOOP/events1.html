@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        function InsertClick(obj, e, product) {
+            document.write(
+                `Button id: ${obj.id} <br>
+                Button value: ${obj.value} <br>
+                class Name: ${obj.className} <br>
+                X position: ${e.clientX} <br>
+                ctrl key: ${e.ctrlKey} <br>
+                product price:${product.price}
+                `
+            );
+        }
+        function Database(value) {
+            switch (value) {
+                case "Insert":
+                    document.write("Record Inserted");
+                    break;
+                case "update":
+                    document.write("Record updated");
+                    break;
+                case "delete":
+                    document.write("Record deleted");
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="InsertClick(this,event,{Name:'Tv',price:42000})" id="btnInsert" value="insert"
+        class="btn btn-primary">Insert</button>
+
+    <button onclick="Database(this.value)" value="Insert">Insert</button>
+    <button onclick="Database(this.value)" value="update">Update</button>
+    <button onclick="Database(this.value)" value="delete">Delete</button>
+</body>
+
+</html>

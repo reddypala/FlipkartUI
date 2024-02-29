@@ -1,0 +1,3 @@
+Jquery Ajax
+Asynchronous Javascript and XML..
+It is used for handling Partial PostBack.

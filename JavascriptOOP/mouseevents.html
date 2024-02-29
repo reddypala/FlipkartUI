@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseevents</title>
+    <script>
+        function bodyLoad() {
+            var button = document.createElement("button");
+            button.innerHTML = "Insert";
+            button.addEventListener(onclick,()=>{
+                document.write("Record Inserted");
+            })
+            document.getElementById("container").appendChild(button);
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+    <div id="container">
+
+    </div>
+
+</body>
+
+</html>

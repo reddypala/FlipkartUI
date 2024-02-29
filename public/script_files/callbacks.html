@@ -1,0 +1,56 @@
+<script>
+    // callbacks.
+    // function getAPI(url, success, failure) {
+    //     if (url == "http://fakestoreapi.com") {
+    //         success();
+    //     } else {
+    //         failure();
+    //     }
+    // }
+    // getAPI(prompt("Enter Url"), function () {
+    //     document.write("Data Fetched successfully");
+    // }, function () {
+    //     document.write("Erroe: Unable to Fetch");
+    // });
+
+    //Promises
+
+    // var getApi = new Promise(function (resolve, reject) {
+    //     var url = prompt("Enter Url");
+    //     if (url == "http://fakestoreapi.com") {
+    //         resolve("Data Fetched successfully...");
+    //     } else {
+    //         reject("Unable to fetch data");
+    //     }
+    // });
+    // calling a promise
+    // getApi.then(function (response) {
+    //     document.write(`Success:${response}`);
+    // }).catch(function (exception) {
+    //     document.write(`Error:${exception}`)
+    // });
+
+    //Recursion
+    function Factorial(n){
+        if(n==0){
+            return 1;
+        }else{
+            return n*Factorial(n-1);
+        }
+    }
+    document.write(`factorial of :${Factorial(7)}`);
+
+    // Arrow Functions
+    var hello = (uname)=>{
+        document.write(`Hello! ${uname}`);
+    }
+
+    hello("Ashok");
+
+    fetch("http://fakestoreapi.com/products").then(response => response.json()).then(products=>{
+        products.map(product=>{
+            document.write(product.title + "<br>");
+        })
+    })
+     
+</script>

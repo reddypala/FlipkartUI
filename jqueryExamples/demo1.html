@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function () {
+            $("h2").text("Jquery");
+            $("#msg").text("Write less Do more");
+            $(".container").text("Jquery is a Javascript library.")
+
+            $("p").append(" to Jquery");
+            $("p").prepend("Hello! ").css("fontWeight", "bold");
+            $("p").before("JQUERY");
+            $("p").after("Jquery UI");
+        })
+    </script>
+</head>
+
+<body>
+    <h2></h2>
+    <p id="msg"></p>
+    <div class="container"></div>
+
+    <p>Welcome</p>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function loadClick(){
+            var pic  = document.createElement("img");
+            pic.src = "../images/Boat.jpg";
+            pic.width="200";
+            pic.height="200";
+            document.querySelector("figure").appendChild(pic);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="loadClick()">Load Image</button>
+    <br><br>
+    <figure>
+
+    </figure>
+</body>
+</html>

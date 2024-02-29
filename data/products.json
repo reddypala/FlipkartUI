@@ -1,0 +1,56 @@
+[
+    {
+        "title": "realme C53 (Champion Black, 64GB)",
+        "price": 10999,
+        "image": "../../public/images/realme.png",
+        "features": [
+            "6 GB RAM | 64 GB ROM | Expandable Upto 2 TB",
+            "17.12 cm (6.74 inch) HD Display",
+            "108MP + 2MP | 8MP Front Camera",
+            "5000 mAh Battery",
+            "T612 Processor",
+            "1 Year Manufacturer Warranty for Phone and 6 Months Wrranty for in the Box Accessories"
+        ],
+        "ratings": {
+            "rate": 4.3,
+            "count": 17890,
+            "reviews": 888
+        }
+    },
+    {
+        "title": "realme C53 (Champion gold, 128GB)",
+        "price": 12999,
+        "image": "../../public/images/realme-gold.png",
+        "features": [
+            "6 GB RAM | 64 GB ROM | Expandable Upto 2 TB",
+            "17.12 cm (6.74 inch) HD Display",
+            "108MP + 2MP | 8MP Front Camera",
+            "5000 mAh Battery",
+            "T612 Processor",
+            "1 Year Manufacturer Warranty for Phone and 6 Months Wrranty for in the Box Accessories"
+        ],
+        "ratings": {
+            "rate": 4.1,
+            "count": 19890,
+            "reviews": 988
+        }
+    },
+    {
+        "title": "realme C53 (Champion aqua, 128GB)",
+        "price": 12999,
+        "image": "../../public/images/realme-aqua.png",
+        "features": [
+            "6 GB RAM | 64 GB ROM | Expandable Upto 2 TB",
+            "17.12 cm (6.74 inch) HD Display",
+            "108MP + 2MP | 8MP Front Camera",
+            "5000 mAh Battery",
+            "T612 Processor",
+            "1 Year Manufacturer Warranty for Phone and 6 Months Wrranty for in the Box Accessories"
+        ],
+        "ratings": {
+            "rate": 4.1,
+            "count": 19890,
+            "reviews": 988
+        }
+    }
+]

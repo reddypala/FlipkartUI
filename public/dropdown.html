@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <dl>
+            <dt>gender</dt>
+            <dd>
+                <select name="gender">
+                    <option>choose gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </dd>
+            <dt>Select product</dt>
+            <select name="products">
+                <option>Choose a product</option>
+                <optgroup label="Electronics">
+                    <option>Televisions</option>
+                    <option>Mobiles</option>
+                    <option selected>Watches</option>
+                </optgroup>
+                <optgroup label="Footwear">
+                    <option>Casual</option>
+                    <option>sneakers</option>
+                    <option disabled>chappals</option>                    
+                    <option>boots</option>                    
+                </optgroup>
+            </select>
+        </dl>
+        <dl>
+            <dt>Airport</dt>
+            <dd>
+                <select name="airport">
+                    <option>Select Airport</option>
+                    <option value="BOM">Bombay</option>
+                    <option value="DEL">Delhi</option>
+                    <option value="VTZ">Visakhapatnam</option>
+                    <option value="HYD">Hyderabad</option>
+                </select>
+            </dd>
+        </dl>
+        <dl>
+            <dt>listbox</dt>
+            <dd>
+                <select name="listbox" size="4" multiple>
+                    <option>select city</option>
+                    <option>Delhi</option>
+                    <option>Bombay</option>
+                    <option>vizag</option>
+                    <option>Banglore</option>
+                </select>
+            </dd>
+        </dl>
+        <dl>
+            <dt>TextBox</dt>
+            <dd>
+                <input type="text" name="textbox"> Allow single line content
+            </dd>
+            <dt>Text Area Demo</dt>
+            <dd>
+                <textarea name="txtarea">Enter your text</textarea> Allow multiline content.
+                <textarea name="ta" cols="30" rows="10" disabled>Random content i am writing here
+                    This is just read only, u r not allowed to modify any information inside the text area.
+                </textarea>
+            </dd>
+        </dl>
+
+        <button>submit</button>
+    </form>
+</body>
+
+</html>

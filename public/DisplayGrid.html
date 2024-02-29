@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,footer,section{
+            border: 1px solid black;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+        }
+        header{
+            grid-row: 1;
+            grid-column: 1/4;
+        }
+        section{
+            grid-row:2;
+            grid-column: 1/4;
+        }
+        footer{
+            grid-row: 3;
+            grid-column: 1/4 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Header
+        </header>
+        <section>
+            <nav>
+                navigation
+            </nav>
+            <main>
+                main 
+            </main>
+            <aside>
+                ads..
+            </aside>
+        </section>
+       
+        <footer>
+            footer
+        </footer>
+    </div>
+</body>
+</html>

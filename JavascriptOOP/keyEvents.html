@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyEvents</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function verifyCaps(e){
+           // console.log(`keyCode:${e.keyCode}`);
+            var msg = document.getElementById("msg");
+            if(e.keyCode>=65 && e.keyCode<=90){
+                msg.style.display = "block";
+            }else{
+                msg.style.display = "none";
+            }
+        }
+
+        var users=[
+            {userName:'john'},
+            {userName:'john12'},
+            {userName:'john_nit'},
+            {userName:'david'},
+        ]
+
+        function verifyUser(){
+            var username = document.getElementById("txtname").value;
+            var usrmsg = document.getElementById("usrmsg");
+            for(var user of users){
+                if(user.userName==username){
+                    usrmsg.innerHTML = "User name already exists - try another";
+                    usrmsg.className = "text-danger";
+                    break;
+                }else{
+                    usrmsg.innerHTML = "User Name Available";
+                    usrmsg.className="text-success";
+                }
+            }
+        }
+    </script>
+</head>
+<body class="container-fluid">
+    <fieldset>
+        <legend>User Name</legend>
+        <input type="text" onkeyup="verifyUser()" class="form-control" id="txtname">
+        <div class="txt-danger" id="usrmsg">
+
+        </div>
+        <legend>Verify Password</legend>
+        <input type="password" class="form-control" id="txt-pwd" onkeypress="verifyCaps(event)">
+        <div class="text-warning" id="msg" style="display: none;">
+            <span class="bi bi-exclamation-triangle"></span>
+            Warning: caps is ON
+        </div>
+        
+    </fieldset>
+</body>
+</html>

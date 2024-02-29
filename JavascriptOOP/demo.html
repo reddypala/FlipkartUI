@@ -1,0 +1,27 @@
+<script>
+
+    var userName = prompt("Enter Username");
+    var role = prompt("Enter your Role","customer|admin|manager");
+    var productName = prompt("Enter New Name for Product");
+    class Product {
+
+        _productName;
+
+        get ProductName(){
+            return this._productName;
+        }
+        set ProductName(newName){
+            if(role == "admin"){
+                this._productName = newName;
+            }else{
+                document.write(`Unauthorized:Hello ${userName} your role ${role} is not authorized to set Name`);
+            }
+        }
+    }
+    let obj = new Product();
+    obj.ProductName = productName;
+    //How to verify value is stored or not
+    if(obj.ProductName){
+        document.write(`Product Name: ${obj.ProductName}`);
+    }
+</script>

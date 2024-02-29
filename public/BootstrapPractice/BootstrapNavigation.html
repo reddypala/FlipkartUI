@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navigations</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <h2>Product Info</h2>
+    <div class="nav nav-tabs">
+        <div class="nav-item active">
+            <!-- <a class="nav-link">Basic Info</a> -->
+            <a href="#basic" data-bs-toggle="tab" class="nav-link">Basic Info</a>
+        </div>
+        <div class="nav-item">
+            <!-- <a class="nav-link">Preview</a> -->
+            <a href="#preview" data-bs-toggle="tab" class="nav-link">Preview</a>
+        </div>
+        <div class="nav-item">
+            <!-- <a class="nav-link">Description</a> -->
+            <a href="#description" data-bs-toggle="tab" class="nav-link">Description</a>
+        </div>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane active" id="basic">
+            <h2>Basic Details</h2>
+            <dl>
+                <dt>Name</dt>
+                <dd>Nike Casuals</dd>
+                <dt>Price</dt>
+                <dd>5600.44</dd>
+            </dl>
+        </div>
+        <div class="tab-pane" id="preview">
+            <h2>Preview</h2>
+            <img src="../images/shoe.jpg" width="200" height="200">
+        </div>
+        <div class="tab-pane" id="description">
+            <h2>Description</h2>
+            <p>Nike is a neke shoes.It is very costly. </p>
+            
+        </div>
+    </div>
+    
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

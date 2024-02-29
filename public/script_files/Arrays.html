@@ -1,0 +1,32 @@
+<script>
+    var values = [10, "A", true];
+    for (var property in values) {
+        document.write(`${property}[${typeof property}]: ${values[property]} ${typeof values[property]} <br>`)
+    }
+
+    var val_array = [1, "Tv", true, ["Delhi", "Hyd"], function () {
+        document.write("Hello ! world <br>");
+    }]
+
+    document.write(val_array[1] + "<br>");
+    document.write(val_array["1"] + "<br>");
+    document.write(val_array[3]["1"] + "<br>");
+    document.write(val_array[3][1] + "<br>");
+    val_array[4](); // IIFE=> Immediately Invoking Function Expression.
+
+    (function () {
+        document.write("Welcome to javascript <br>")
+    })();
+
+    var vals = [
+        [
+            [10, 20, 30], [40, 50, 60]
+        ],
+        [
+            ["A", "B"], ["C", "D"]
+        ]
+    ];
+    document.write(vals[0][0][1]); // 20
+    document.write("<br>");
+    document.write(vals[1][1][0]);  //C
+</script>

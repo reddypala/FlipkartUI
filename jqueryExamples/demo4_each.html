@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        var categories = ["Electronics","Footwear","Fashion"];
+        $(function(){
+            $.each(categories,function(key,value){
+                $(`<li>[${key}]${value}</li>`).appendTo("ol");
+                $(`<option>${value}</option>`).appendTo("select");
+                $(`<tr><td>${value}</td></tr>`).appendTo("tbody");
+            })
+
+
+        })
+    </script>
+</head>
+<body>
+    <ol>
+
+    </ol>
+    <select>
+
+    </select>
+    <table border="1" width="200">
+        <thead>
+            <tr>
+                <th>Categories</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<script>
+    var categories = ["All", "Electronics","Mobiles"];
+
+    document.write("<br> Reading values from array <br>");
+
+    document.write("<br> By toString() method <br>")
+    document.write(categories.toString());
+
+    document.write("<br> By Join() method <br>");
+    document.write(categories.join("-->"));
+
+    document.write("<br> By slice() method <br>");
+    document.write(categories.slice(1,2));   // 2 is not included
+
+    document.write("<br> By map() method <br>");
+
+    categories.map(function(category){
+        document.write(`<li>${category}</li>`)
+    })
+
+    document.write("<br> By forEach() method <br>");
+    categories.forEach(function(category,index){
+        document.write(`<li>${category}[${index}]</li>`)
+    })
+
+    document.write("<br> By find() method <br>");
+
+    var sales = [45000,42100,67000,68000,23000];
+    var result = sales.find(function(value){
+        return value>60000;
+    });
+    document.write(result+"<br>");
+    var filter_results = sales.filter(function(value){
+        return value>60000;
+    });
+    document.write(filter_results)
+
+
+
+</script>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS uNITS</title>
+    <style>
+        .wrapper{
+            font-size: 1em;
+        }
+        .px{
+            width: 200px;
+            background-color: blue;
+            border: 1px solid black;
+        }
+        .vw{
+            width: 10vw;
+            background-color: red;
+            border: 1px solid black;
+        }
+        .em{
+            width: 10em;
+            background-color: brown;
+            border: 1px solid black;
+        }
+        
+        html{
+            font-size: 16px;
+        }
+        .ems li{
+            font-size: 1.3em;
+        }
+        .rems li{
+            font-size:1.3rem;
+        }
+
+        .wrapper1{
+            width: 400px;
+            border: 3px solid rebeccapurple;
+        }
+        .pixel{
+            width: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+        }
+        .percent{
+            width: 50%;
+            background-color: brown;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box px">I am 200px wide</div>
+        <div class="box vw">I am 10vw wide</div>
+        <div class="box em">I am 10em wide</div>
+    </div>
+    <ul class="ems">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three
+            <ul>
+                <li>Three A</li>
+                <li>Three B
+                    <ul>
+                        <li><b>Three B</b></li>
+                        <li><b>2</b></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="rems">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three
+            <ul>
+                <li>Three A</li>
+                <li>Three B
+                    <ul>
+                        <li><b>Three B</b></li>
+                        <li><b>2</b></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="box1 pixel">I am 200px wide</div>
+    <div class="box1 percent">I am 40% wide</div>
+    <div class="wrapper1">
+        <div class="box1 pixel">I am 200px wide</div>
+        <div class="box1 percent">I am 40% wide</div>
+    </div>
+</body>
+</html>

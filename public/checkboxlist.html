@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox list</title>
+
+    <style>
+        ul{
+            list-style: none;
+            border: 1px solid black;
+            padding: 10px;
+            width: 120px;
+            height: 50px;
+            overflow: auto;
+        }
+        .terms+span{
+            color: red;
+        }
+        .terms:checked+span{
+            color: green;
+        }
+        .terms~button{
+            display: none;
+        }
+        .terms:checked~button{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <dl>
+            <dt>Select course</dt>
+            <dd>
+                <ul>
+                    <li><input type="checkbox" name="course" value="java"> Java</li>
+                    <li><input type="checkbox" name="course" value=".net"> .NET</li>
+                    <li><input type="checkbox" name="course" value="oracle"> Oracle</li>
+                    <li><input type="checkbox" name="course" value="mysql"> Mysql</li>
+                    <li><input type="checkbox" name="course" value="MongoDB">MongoDB</li>
+                </ul>
+            </dd>
+        </dl>
+
+        <div class="container">
+            Terms of service
+        </div>
+        <div>
+            <input type="checkbox" class="terms"> <span>I Accept</span> <br><br>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
+
+
+scrollable checkbox list

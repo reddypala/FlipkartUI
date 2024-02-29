@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function verifyName() {
+            var username = document.getElementById("username").value;
+            var errormsg = document.getElementById("errormsg");
+            if (username.length < 4) {
+                errormsg.innerHTML = "Name is too short min 4 chars required".fontcolor('red');
+            } else {
+                errormsg.innerHTML = "Name is verified".fontcolor('green');
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <dl>
+        <dt>UserName</dt>
+        <dd>
+            <input type="text" placeholder="Enter Name" id="username" onkeyup="verifyName()">
+        </dd>
+        <dd id="errormsg"></dd>
+    </dl>
+</body>
+
+</html>

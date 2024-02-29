@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-placement in grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            border: 2px solid black;
+            /* grid-auto-rows: 100px 200px; */
+            grid-auto-rows: minmax(100px, auto);
+        }
+        .wrapper div{
+            border: 1px solid blue;
+            border-radius: 6px;
+            background-color: aquamarine;
+            margin: 10px;
+        }
+
+        .auto-column{
+            display: grid;
+            gap: 10px;
+            grid-template-rows: repeat(3,200px);
+            border: 2px solid magenta;
+            grid-auto-flow: column;
+            grid-auto-columns: 300px 100px;
+
+        }
+        .auto-column div{
+            border:1px solid black;
+            border-radius: 3px;
+            background-color: violet;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four <br>This cell <br> has
+            extra <br> content. <br> Max is auto <br>
+            so the row expands
+        </div>
+        <div>Five</div>
+        <div>six</div>
+        <div>seven</div>
+        <div>seven</div>
+        <div>Eight</div>
+        <div>Nine</div>
+        <div>Ten</div>
+    </div>
+
+    <div class="auto-column">
+        <div>one</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+        <div>six</div>
+        <div>seven</div>
+        <div>Eight</div>
+        
+
+    </div>
+    
+</body>
+</html>

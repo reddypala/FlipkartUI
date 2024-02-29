@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var categories = ["All", "Electronics", "Footwear", "Fashion"];
+        function loadClick() {
+            categories.map(function (category) {
+                var li = document.createElement("li");
+                li.innerHTML = category;
+                document.querySelector("ol").appendChild(li);
+
+                var option =  document.createElement("option");
+                option.text = category;
+                option.value = category;
+                document.querySelector("select").appendChild(option);
+            })
+
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="loadClick()">Load Data</button>
+    <br><br>
+    <ol>
+
+    </ol>
+    <select>
+
+    </select>
+</body>
+
+</html>

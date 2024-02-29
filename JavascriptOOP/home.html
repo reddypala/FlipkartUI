@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module">
+        import welcome, {Hello} from "../src/Library/modules/home_module.js";
+        import {add} from "../src/Library/modules/math_module.js";
+        document.querySelector("p").innerHTML = Hello() + "<br>" + welcome() + "<br>" + add(20,30);
+    </script>
+</head>
+<body>
+    <p></p>
+  
+</body>
+</html>

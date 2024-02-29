@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button events</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript">
+        function openImage() {
+            window.open("../public/images/Boult.jpg", 'bolt', 'width=900 height=500')
+        }
+        function disableRightClick() {
+            document.oncontextmenu = function () {
+                return false;
+            }
+
+        }
+
+    </script>
+</head>
+
+<body class="container-fluid" oncontextmenu="disableRightClick()">
+    <div class="mt-4">
+        <h3>Right click disable on this page</h3>
+        <img ondblclick="openImage()" src="../public/images/Boult.jpg" title="double click to see large image"
+            width="150" height="150">
+    </div>
+    <div oncopy="alert('text copied')" oncut="alert('text removed')" onpaste="alert('text pasted')">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis, ex nostrum nulla maiores eum aspernatur
+            officiis magni tempore, consequatur, corporis reprehenderit? Ex minus aliquam natus iste sapiente voluptate
+            harum.</p>
+        <textarea cols="60" rows="10">
+
+        </textarea>
+    </div>
+</body>
+
+</html>

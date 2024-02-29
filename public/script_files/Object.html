@@ -1,0 +1,49 @@
+<!--script>
+    var product = {
+        "Name": "",
+        "price": 0,
+        "qty": 0,
+        "Total": function () {
+            return this.qty * this.price;
+        },
+        "print": function () {
+            document.write(`Name:${this.Name} <br> Price:${this.price} <br> qty:${this.qty} <br>Total:${this.Total()}`)
+        }
+    }
+    product.Name = prompt("Enter Name");
+    product.price = parseFloat(prompt("Enter price"));
+    product.qty = prompt("enter quantity");
+    product.print();
+</script-->
+
+<!--script>
+    fetch("http://fakestoreapi.com/products/1")
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (product) {
+            for (var property in product) {
+                document.write(`${property} <br>`);
+            }
+        })
+</script-->
+<script>
+    fetch("http://fakestoreapi.com/products/1")
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (product) {
+        //   Object.keys(product).map(function(key){
+        //     document.write(key +"<br>");
+        //     document.write(`${key}[${typeof product[key]}] <br>`);
+        //   })
+        //  var no_of_keys = Object.keys(product).length;
+        //  document.write(`no_of_keys in a object:${no_of_keys}`);
+        // document.write(`Is fakestore product has stock key:${"stock" in product} <br>`);
+        // document.write(`Is fakestore product has price key:${"price" in product} <br> `);
+
+        delete product.price;
+        document.write(`Title:${product.title} <br> price:${product.price}`);
+        })
+</script>
+

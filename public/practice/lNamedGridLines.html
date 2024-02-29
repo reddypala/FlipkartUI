@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>named grid lines</title>
+    <style>
+        .wrapper{
+            display:flex;
+            border: 2px solid burlywood;
+           
+        }
+        .wrapper div:nth-child(odd){
+            background-color: aqua;
+        }
+        .wrapper div:nth-child(even){
+            background-color:blueviolet;
+        }
+        .box1{
+            flex:1 1 0;
+        }
+        .box2{
+            flex:1 1 0;
+        }
+        .box3{
+            flex:2 1 0;
+        }
+       
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box1">one</div>
+        <div class="box2">Two</div>
+        <div class="box3">Three</div>
+        
+    </div>
+</body>
+
+</html>

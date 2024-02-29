@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $("#preview").slideToggle();
+            })
+        })
+    </script>
+</head>
+<body>
+    <button>Toggle Preview</button>
+    <br><br>
+    <div id="preview" >
+        <img src="../public/images/32inchtv.jpg" width="200" height="200" alt="pic">
+        
+    </div>
+</body>
+</html>

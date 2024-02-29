@@ -1,0 +1,27 @@
+<script>
+    var sales = [45000,42100,67000,68000,23600];
+    for(var property in sales){
+        document.write(property+"<br>")
+    }
+
+    for(var values of sales){
+        document.write(values+"<br>")
+    }
+
+    for(var property in sales){
+        document.write(`[${property}]:${sales[property]}<br>`);
+    }
+
+    document.write("<br> ****Array Destructuring**** <br>")
+    var details = [1,"tv",true,["Delhi","Hyd"]];
+    var [id,name,stock,cities] = details;
+    document.write(`
+        id:${id} <br>
+        name:${name} <br>
+        stock:${stock} <br>
+        cities:${cities}
+    `)
+
+
+
+</script>

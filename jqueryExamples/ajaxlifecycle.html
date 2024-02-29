@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Demo</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $.ajax({
+                    method:"get",
+                    url:"../data/help.txt",
+                    success:function(response){
+                        $("pre").html(response);
+                    },
+                    error:function(jXHR){
+                        alert(`${jXHR.status}:The requested content ${jXHR.statusText}`);
+                    }
+                })
+            })
+        })
+        .ajaxStart(()=>{
+            alert("Your request Accepted")
+        })
+        .ajaxSuccess(()=>{
+            alert("Your request is being processed")
+        })
+        .ajaxComplete(()=>{
+            alert("You request successfully processed");
+            alert("you will be redirected to shopping");
+            location.href="../public/shoppertemplate.html";
+        })
+        .ajaxStop(()=>{
+            alert("Your data is ready to display");
+        })
+        .ajaxError(()=>{
+            alert("something went wrong");
+        })
+    </script>
+</head>
+<body>
+    <button>GetHelp</button>
+    <pre></pre>
+  
+</body>
+</html>

@@ -1,0 +1,19 @@
+<script>
+    var stock = true;
+    if(stock==1){
+        document.write("stock Available");
+    }else{
+        document.write("out of stock");
+    }
+
+    var x;
+    document.write( "<br>"+ "x="+x);
+
+    var name = "Samsung TV";
+    var price = 70000;
+    if(price==undefined){
+        document.write(`<br>Name=${name}<br>`);
+    }else{
+        document.write(`<br> name=${name} <br> price=${price.toLocaleString('en-in',{style:"currency",currency:"INR"})} <br>`)
+    }
+</script>

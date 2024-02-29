@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function f1() {
+            document.querySelector("p").innerHTML = "1";
+        }
+        function f2() {
+            document.querySelector("p").innerHTML = "2";
+        }
+        function f3() {
+            document.querySelector("p").innerHTML = "3";
+        }
+        var a, b, c;
+        function bodyLoad() {
+            a = setTimeout(f1, 1000);
+            b = setTimeout(f2, 5000);
+            c = setTimeout(f3, 10000);
+
+        }
+        function cancelClick(){
+            clearTimeout(b);
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+    <button onclick="cancelClick()">cancel F2</button>
+    <p align="center"></p>
+</body>
+
+</html>

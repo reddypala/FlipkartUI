@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        .static {
+            position: static;
+            border: 2px solid magenta;
+            margin: 20px;
+        }
+
+        .relative {
+            position: relative;
+            border: 2px solid red;
+            width: 500px;
+            left: 20px;
+
+        }
+
+        .parent {
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            margin-top: 10px;
+            position: static;
+
+        }
+
+        .child {
+            border: 1px solid blueviolet;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            left: 40px;
+            right: 40px;
+        }
+
+        .fp {
+            border: 1px solid red;
+            width: 100px;
+            top: 0;
+            right: 0;
+            position: fixed;
+        }
+
+        .rel {
+            border: 3px solid pink;
+            width: 400px;
+            height: 200px;
+            position: relative;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid red;
+        }
+
+        .absolute1 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid red;
+        }
+
+        .sticky {
+            border: 2px solid burlywood;
+            color: brown;
+            width: 100px;
+            position: sticky;
+            top: 0;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Position:static;</h2>
+    <p>An element with position static is positioned according to the normal flow of the page.</p>
+    <div class="static">
+        This div element has position static.
+    </div>
+
+    <h2>position:relative</h2>
+    <p>An element with position relative is positioned relative to its normal position.</p>
+    <div class="relative">
+        This div element has position relative left to the normal flow.
+    </div>
+    <p>This is a paragraph,It also removes element from normal flow of the document
+        we can keep its position left,right,top or bottom
+        It is fixed "Relative to page".Here scrolling is rocked.
+    </p>
+    <p>This is a paragraph,It also removes element from normal flow of the document
+        we can keep its position left,right,top or bottom
+        It is fixed "Relative to page".Here scrolling is rocked.
+    </p>
+    <p>This is a paragraph,It also removes element from normal flow of the document
+        we can keep its position left,right,top or bottom
+        It is fixed "Relative to page".Here scrolling is rocked.
+    </p>
+    <p>This is a paragraph,It also removes element from normal flow of the document
+        we can keep its position left,right,top or bottom
+        It is fixed "Relative to page".Here scrolling is rocked.
+    </p>
+    <p>This is a paragraph,It also removes element from normal flow of the document
+        we can keep its position left,right,top or bottom
+        It is fixed "Relative to page".Here scrolling is rocked.
+    </p>
+    <div class="parent">
+        parent
+        <div class="child">
+            child
+        </div>
+        <div class="fp">
+            child1
+        </div>
+    </div>
+
+    <h2>position:absolute;</h2>
+
+    <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of
+        positioned relative to the viewport, like fixed):</p>
+
+    <div class="rel">
+        This div element gas position: relative;
+        <div class="absolute">
+            This div element has position: absolute;
+        </div>
+    </div>
+    <div class="absolute1">
+        This div element has position: absolute;
+    </div>
+    <div class="sticky">I am sticky</div>
+    <div>
+        <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll
+            position.</p>
+        <p>Scroll back up to remove the stickyness.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+            concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+            Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+            concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+            Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>An element with position static is positioned according to the normal flow of the page.</p>
+        <div class="static">
+            This div element has position static.
+        </div>
+
+        <h2>position:relative</h2>
+        <p>An element with position relative is positioned relative to its normal position.</p>
+        <div class="relative">
+            This div element has position relative left to the normal flow.
+        </div>
+        <p>This is a paragraph,It also removes element from normal flow of the document
+            we can keep its position left,right,top or bottom
+            It is fixed "Relative to page".Here scrolling is rocked.
+        </p>
+        <p>This is a paragraph,It also removes element from normal flow of the document
+            we can keep its position left,right,top or bottom
+            It is fixed "Relative to page".Here scrolling is rocked.
+        </p>
+        <p>This is a paragraph,It also removes element from normal flow of the document
+            we can keep its position left,right,top or bottom
+            It is fixed "Relative to page".Here scrolling is rocked.
+        </p>
+        <p>This is a paragraph,It also removes element from normal flow of the document
+            we can keep its position left,right,top or bottom
+            It is fixed "Relative to page".Here scrolling is rocked.
+        </p>
+        <p>This is a paragraph,It also removes element from normal flow of the document
+            we can keep its position left,right,top or bottom
+            It is fixed "Relative to page".Here scrolling is rocked.
+        </p>
+        <p>An element with position static is positioned according to the normal flow of the page.</p>
+        <div class="static">
+            This div element has position static.
+        </div>
+
+        <h2>position:relative</h2>
+        <p>An element with position relative is positioned relative to its normal position.</p>
+        <div class="relative">
+            This div element has position relative left to the normal flow.
+        </div>
+        <p>This is a paragraph,It also removes element from normal flow of the document
+            we can keep its position left,right,top or bottom
+            It is fixed "Relative to page".Here scrolling is rocked.
+        </p>
+        <p>This is a paragraph,It also removes element from normal flow of the document
+            we can keep its position left,right,top or bottom
+            It is fixed "Relative to page".Here scrolling is rocked.
+        </p>
+        <p>This is a paragraph,It also removes element from normal flow of the document
+            we can keep its position left,right,top or bottom
+            It is fixed "Relative to page".Here scrolling is rocked.
+        </p>
+        <p>This is a paragraph,It also removes element from normal flow of the document
+            we can keep its position left,right,top or bottom
+            It is fixed "Relative to page".Here scrolling is rocked.
+        </p>
+        <p>This is a paragraph,It also removes element from normal flow of the document
+            we can keep its position left,right,top or bottom
+            It is fixed "Relative to page".Here scrolling is rocked.
+        </p>
+        <p>An element with position static is positioned according to the normal flow of the page.</p>
+    <div class="static">
+        This div element has position static.
+    </div>
+
+    <h2>position:relative</h2>
+    <p>An element with position relative is positioned relative to its normal position.</p>
+    <div class="relative">
+        This div element has position relative left to the normal flow.
+    </div>
+    <p>This is a paragraph,It also removes element from normal flow of the document
+        we can keep its position left,right,top or bottom
+        It is fixed "Relative to page".Here scrolling is rocked.
+    </p>
+    <p>This is a paragraph,It also removes element from normal flow of the document
+        we can keep its position left,right,top or bottom
+        It is fixed "Relative to page".Here scrolling is rocked.
+    </p>
+    <p>This is a paragraph,It also removes element from normal flow of the document
+        we can keep its position left,right,top or bottom
+        It is fixed "Relative to page".Here scrolling is rocked.
+    </p>
+    <p>This is a paragraph,It also removes element from normal flow of the document
+        we can keep its position left,right,top or bottom
+        It is fixed "Relative to page".Here scrolling is rocked.
+    </p>
+    <p>This is a paragraph,It also removes element from normal flow of the document
+        we can keep its position left,right,top or bottom
+        It is fixed "Relative to page".Here scrolling is rocked.
+    </p>
+    </div>
+</body>
+
+</html>

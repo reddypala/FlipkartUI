@@ -1,0 +1,37 @@
+<!-- <script>
+    var result = function(){};
+    var password = prompt("Enter Password");
+    if(password == "admin"){
+        result = function(){
+            document.write("Login success..");
+        }
+    }else{
+        result = function(){
+            document.write("Invalid password <br>");
+            document.write(`Try again <a href="functions.html">Click</a>`)
+        }
+    }
+    result();
+</script> -->
+
+<!-- <script>
+    function demo(collection){
+        collection.map(function(item){
+            document.write(item+"<br>");
+        })
+    }
+    demo(["Delhi","Hyd","Mumbai"]);
+</script> -->
+
+<script>
+    function details(title,...product){
+        var [name, price,stock,rating] = product;
+        if(price){
+            document.write(`<h2>Title:${title}</h2> <br> name:${name} <br> price:${price} <br> stock:${stock} <br> rating:${rating}`);
+        }else{
+            document.write(`Name:${name} <br> stock:${stock}`);
+        }
+
+    }
+    details("Product details","Samsung Tv", 45000,true,4.3);
+</script>

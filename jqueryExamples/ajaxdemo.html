@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Demo</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $.ajax({
+                    method:"get",
+                    url:"http://fakestoreapi.com/products",
+                    success:function(products){
+                        $.each(products,(key,product)=>{
+                            $(`<tr>
+                                <td width="200">${product.title}</td>
+                                <td><img src=${product.image} width="70" height="70"></td>
+                                <td>${product.price}</td>
+                                </tr>`).appendTo("tbody")
+                        })
+                    },
+                    error:function(jXHR){
+                        alert(`${jXHR.status}:The requested content ${jXHR.statusText}`);
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <button>Load Products</button>
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Preview</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+  
+</body>
+</html>

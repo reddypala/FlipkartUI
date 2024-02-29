@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line-based Placement</title>
+  
+  <style>
+    .wrapper{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(3,100px);
+      column-gap:20px;
+      row-gap:10px;
+    }
+    .box1{
+      /* grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 4; */
+      background-color: aqua;
+      grid-column: 1/2;
+      grid-row: 1/4;
+
+    }
+    .box2{
+      /* grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3; */
+      background-color: red;
+      grid-column: 3/4;
+      grid-row: 1/3;
+    }
+    .box3{
+      /* grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2; */
+      background-color: blueviolet;
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    .box4{
+      /* grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4; */
+      background-color: burlywood;
+      grid-column:2/4 ;
+      grid-row: 3/4;
+    }
+
+
+  </style>
+</head>
+
+<body>
+    <div class="wrapper">
+      <div class="box1">ONE</div>
+      <div class="box2">TWO</div>
+      <div class="box3">THREE</div>
+      <div class="box4">FOUR</div>
+    </div>
+</body>
+
+</html>

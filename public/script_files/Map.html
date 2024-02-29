@@ -1,0 +1,18 @@
+<script>
+    var topics = new Map();
+    topics.set(1,"Html is markup language");
+    topics.set("categories", ["Electronics","Fashion"]);
+    document.write(topics.get(1)+"<br>");
+    document.write(topics.get("categories")+"<br>");
+    document.write(`Total keys:${topics.size} <br>`);
+    for(var item of topics.keys()){
+        document.write(item+"<br>");
+    }
+    for(var item of topics.values()){
+        document.write(item+"<br>");
+    }
+    for(var item of topics.entries()){
+        document.write(item+"<br>");
+    }
+
+</script>
